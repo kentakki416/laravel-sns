@@ -16,11 +16,11 @@
     </li>
     @endguest
       
-    @auth {{--この行を追加--}}
+    @auth
     <li class="nav-item">
-      <a class="nav-link" href=""><i class="fas fa-pen mr-1"></i>投稿する</a>
+      <a class="nav-link" href="{{ route('articles.create') }}"><i class="fas fa-pen mr-1"></i>投稿する</a> {{--この行のhref属性を変更--}}
     </li>
-    @endauth {{--この行を追加--}}
+    @endauth
     
     @auth {{--この行を追加--}}
     <!-- Dropdown -->

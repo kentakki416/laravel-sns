@@ -9,6 +9,11 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Article extends Model
 {
+
+    protected $fillable = [
+        'title',
+        'body',
+    ];
     //==========ここから追加==========
     public function user(): BelongsTo
     {
